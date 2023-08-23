@@ -18,6 +18,7 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	 return library.reduce((count, book) => count + (book.readingStatus ? 1 : 0), 0);
 };
 
 // Do not change the code below
